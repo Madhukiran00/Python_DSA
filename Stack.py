@@ -22,16 +22,3 @@ class Stack():
             return '{} pop from stack'.format(data)
         
         
-s=Stack()
-print(s.push(1))
-print(s.push(2))
-print(s.push(3))
-print(s.push(4))
-
-print("\n\n")
-
-print(s.pop())
-print(s.pop())
-print(s.pop())
-        
-    
