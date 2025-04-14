@@ -35,4 +35,7 @@ if __name__=='__main__':
     print(q.enqueue(7))
     
     
-    
+    print(q.dequeue())
+    print(q.dequeue())
+    print(q.dequeue())
+   
