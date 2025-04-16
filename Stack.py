@@ -23,8 +23,7 @@
         
         
 # s=Stack()
-# print(s.push(1))
-
+# print(s.pus
 
 
 
