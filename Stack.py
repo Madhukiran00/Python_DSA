@@ -29,7 +29,6 @@
 
 # print("\n\n")
 
-# print(s.pop())
 
 
 
