@@ -24,7 +24,6 @@
         
 # s=Stack()
 # print(s.push(1))
-# print(s.push(2))
 
 
 
