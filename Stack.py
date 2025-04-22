@@ -30,7 +30,7 @@ print(s.push(3))
 print("\n\n")
 
 print(s.pop())
-print(s.pop())
+
 
 
 
