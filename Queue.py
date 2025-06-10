@@ -6,7 +6,6 @@ class Queue():
         self.numofitems=0
     def isempty(self):
         return self.numofitems==0
-    
     def enqueue(self,items):
         self.queue.insert(self.index,items)
         self.index+=1
