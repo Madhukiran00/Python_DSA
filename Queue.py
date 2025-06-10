@@ -23,6 +23,7 @@ class Queue():
             self.numofitems-=1
             return '{} remove from queue'.format(data)
         
+        
 if __name__=='__main__':
     q=Queue()
     
