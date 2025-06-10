@@ -21,6 +21,10 @@ class Stack():
             
             return '{} pop from stack'.format(data)
         
+    def stacksize(self):
+        return len(self.stack)
+    
+        
         
 s=Stack()
 print(s.push(1))
@@ -28,7 +32,7 @@ print(s.push(2))
 print(s.push(3)) 
 
 print("\n\n")
-
+ 
 print(s.pop())
 
 
