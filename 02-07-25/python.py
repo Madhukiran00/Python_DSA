@@ -97,17 +97,32 @@
 # print(new_li)
 
 
-l=[2,3,4,5,6,7,8]
+# l=[2,3,4,5,6,7,8]
+
+# for i in range(len(l)):
+#     for j in range(2,l[i]):
+#         if  l[i]==2 or l[i]%2!=0 :
+#             l[i]="True"
+#             break
+#         else:
+#             l[i]="False"
+# print(l)
+            
+l = [2, 3, 4, 5, 6, 7, 8]
 
 for i in range(len(l)):
-    for j in range(2,l[i]):
-        if  l[i]==2 or l[i]%2!=0 :
-            l[i]="True"
-            break
+    num = l[i]
+    if num < 2:
+        l[i] = "False"
+    else:
+        for j in range(2, num):
+            if num % j == 0:
+                l[i] = "False"
+                break
         else:
-            l[i]="False"
+            l[i] = "True"
+
 print(l)
-            
 
 
 
