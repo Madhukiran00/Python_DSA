@@ -1,8 +1,17 @@
-import array as arr
+n=253
+string=str(n)
 
-a=arr.array('d',[1,2,3,4,5])
-# a.append(2.5)
-# a.extend([2,4,5,6])
-# a.pop()
-# a.pop(2)
-print(a)
+m500=int(string[-3:])//500
+m1000=int(string[:-3])
+change=int(string[-3:])-500 #750
+m100=change//100. #250 2
+m50=(change-(m100*100))//50
+print(m50)
+print("1000s:{0} , 500s:{1} and 100s:{2} ,50s:{3}".format(m1000,m500,m100,m50))
+
+
+
+
+
+
+
