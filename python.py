@@ -43,7 +43,25 @@ n=2739
 # n=8
 # res=0
 # print((n*(n+1))//2)
-n=6
+# n=6
+# res=0
+# for i in range(1,n+1):
+#     if n%i==0:
+#         res=res*10+i
+# print(res)
 
-for i in range():
 
+# s="mada"
+
+# i=0
+# j=len(s)-1
+# while i<j:
+#     if s[i]==s[j]:
+#         i=i+1
+#         j=j-1
+        
+#     else:
+#         print("False")
+#         break
+# if i>=j:
+#     print("Yes")
