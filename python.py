@@ -65,3 +65,39 @@ n=2739
 #         break
 # if i>=j:
 #     print("Yes")
+
+
+# import math
+
+# num=434
+# res=num//10**int(math.log10(num))
+
+# print(res)
+
+# st="145"
+
+# sum=0
+# for i in range(len(st)):
+#     v=1
+
+#     for j in range(1,int(st[i])+1):
+#         v=v*int(j)
+    
+#     sum=sum+v
+
+# print(sum==int(st))
+
+# Neon number:
+num=9
+
+sq=num**2
+sum=0
+while sq!=0:
+    rem=num%10
+    sum=sum+rem
+    sq=sq//10
+    
+print(sum)
+
+
+
