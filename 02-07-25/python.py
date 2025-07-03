@@ -44,7 +44,7 @@
     
     
     
-l=[5,6,7,8,1,2,4,3]
+l=[5,4,3,2,1]
 max_num=max(l)
 for i in range(len(l)):
     if l[-1]==max_num:
