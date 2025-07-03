@@ -44,9 +44,63 @@
     
     
     
+l=[5,6,7,8,1,2,4,3]
+max_num=max(l)
+for i in range(len(l)):
+    if l[-1]==max_num:
+        break
+    else:
+        l.insert(0,l[-1])
+        l.pop()
+print(l)
+c=0
+for i in range(len(l)-1):
+    if l[i]<l[i+1]:
+        c=c+1
+print(c==(len(l)-1))
+
+
+
+
+
+
+# for i in range(len(l)):
+#     for j in range(len(l)):
+#         if l[i]<l[j]:
+#             temp=l[i]
+#             l[i]=l[j]
+#             l[j]=temp
+# print(l)
+
+
+
+
+# temp=l.copy()
+# temp.sort()
+# print(temp)
+# print(l)
+# for i in range(len(l)):
     
-    
-    
+# res=[]
+# ind=(l.index(min(l)))
+# res.append(l[ind:])
+# res.append(l[:ind])
+
+# print(res)
+
+
+# l=[1,2,3,4,1,2,3,4]
+# new_li=[]
+# for i in range(len(l)):
+#     if (new_li.index(l[i]))==-1:
+#         new_li.append(l[i])
+# print(new_li)
+
+
+
+
+
+
 
 
 
