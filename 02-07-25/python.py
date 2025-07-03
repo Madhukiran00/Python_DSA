@@ -44,25 +44,25 @@
     
     
     
-l=[5,4,3,2,1]
-max_num=max(l)
-for i in range(len(l)):
-    if l[-1]==max_num:
-        break
-    else:
-        l.insert(0,l[-1])
-        l.pop()
-print(l)
-c=0
-for i in range(len(l)-1):
-    if l[i]<l[i+1]:
-        c=c+1
-print(c==(len(l)-1))
+# l=[3,4,5,1,2]
+# max_num=max(l)
+# for i in range(len(l)+1):
+#     if l[-1]==max_num:
+#         break
+#     else:
+#         l.insert(0,l[-1])
+#         l.pop()
+# print(l)
+# c=0
+# for i in range(len(l)-1):
+#     if l[i]<l[i+1]:
+#         c=c+1
+# print(c==(len(l)-1))
 
 
 
 
-
+# l=[5,4,3,2,1]
 
 # for i in range(len(l)):
 #     for j in range(len(l)):
