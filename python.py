@@ -34,9 +34,16 @@ n=2739
 
 # print("hours:",hours,"minutes:",minutes,"secounds:",secounds)
 
+# n=5
+# m=56
+# for i in range(n,m+1):
+#     print(i)
 
 
+# n=8
+# res=0
+# print((n*(n+1))//2)
+n=6
 
-
-
+for i in range():
 
