@@ -44,9 +44,9 @@
     
     
     
-# l=[3,4,5,1,2]
+# l=[5,4,3,2,1]
 # max_num=max(l)
-# for i in range(len(l)+1):
+# for i in range(len(l)):
 #     if l[-1]==max_num:
 #         break
 #     else:
@@ -97,6 +97,17 @@
 # print(new_li)
 
 
+l=[2,3,4,5,6,7,8]
+
+for i in range(len(l)):
+    for j in range(2,l[i]):
+        if  l[i]==2 or l[i]%2!=0 :
+            l[i]="True"
+            break
+        else:
+            l[i]="False"
+print(l)
+            
 
 
 
