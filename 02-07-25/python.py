@@ -108,7 +108,7 @@
 #             l[i]="False"
 # print(l)
             
-l = [2, 3, 4, 5, 6, 7, 8]
+# l = [2, 3, 4, 5, 6, 7, 8]
 
 # for i in range(len(l)):
 #     num = l[i]
@@ -125,16 +125,36 @@ l = [2, 3, 4, 5, 6, 7, 8]
 # print(l)
 
 
-for i in range(len(l)):
-    if i%2==0:
-        print("This is even")
+# for i in range(len(l)):
+#     if i%2==0:
+#         print("This is even")
         
-else:
-    print("This is odd")
+# else:
+#     print("This is odd")
+
+#harshad number
+
+# 18 8+1=9
+
+# import math
+
+# n=3456
+
+# la=n//10**(math.log10(n)-1)
+# print(la)
 
 
 
 
+# import math
 
+# num=434
+# res=num//10**int(math.log10(num))
+
+# length=int(math.log10(num)+1)
+
+# print(length)
+
+# print(res)
 
 

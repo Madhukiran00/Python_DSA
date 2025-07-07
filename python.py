@@ -88,16 +88,71 @@ n=2739
 # print(sum==int(st))
 
 # Neon number:
-num=9
+# num=9
 
-sq=num**2
-sum=0
-while sq!=0:
-    rem=num%10
-    sum=sum+rem
-    sq=sq//10
+# sq=num**2
+# sum=0
+# while sq!=0:
+#     rem=num%10
+#     sum=sum+rem
+#     sq=sq//10
     
-print(sum)
+# print(sum)
+
+# def factorial(n):
+#     if n==0 or n==1:
+#         return 1
+    
+#     return n*factorial(n-1)
+    
+    
+# n=5 
+# print(factorial(5))
+
+
+# def nat_sum(n):
+#     if n==0:
+#         return 1 
+    
+    
+#     return nat_sum(n-1)+nat_sum(n-2)
+# n=5
+# print(nat_sum(n))
+
+# def fibonacci(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return fibonacci(n-1) + fibonacci(n-2)
+# terms = 5 
+# for i in range(terms):
+#     print(fibonacci(i), end=" ")
+
+# n=5
+# a,b=0,1
+# for i in range(n):
+    
+#     print(a,end='')
+#     a,b=b,a+b
+
+# def su(n):
+#     if n==1:
+#         return 1
+#     return n+su(n-1)
+# print(su(5))
+
+def reverse_number(n, rev=0):
+    if n == 0:
+        return rev
+    else:
+        return reverse_number(n // 10, rev * 10 + n % 10)
+
+
+print(reverse_number(1234))
+
+
+
+
 
 
 
