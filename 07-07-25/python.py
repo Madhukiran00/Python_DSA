@@ -2,40 +2,41 @@ l=[[1,2,3],
    [4,5,6],
    [7,8,9]]
 
-def matrix(l):
+def spiralOrder(matrix):
     result = []
-    if not l:
+    if not matrix:
         return result
 
     top = 0
-    bottom = len(l) - 1
+    bottom = len(matrix) - 1
     left = 0
-    right = len(l[0]) - 1
+    right = len(matrix[0]) - 1
 
     while top <= bottom and left <= right:
-        # Traverse from Left to Right (Top Row)
+        # Left to Right
         for col in range(left, right + 1):
-            result.append(l[top][col])
+            result.append(matrix[top][col])
         top += 1
 
-        # Traverse from Top to Bottom (Right Column)
+        # Top to Bottom
         for row in range(top, bottom + 1):
-            result.append([row][right])
+            result.append(matrix[row][right])
         right -= 1
 
-        # Traverse from Right to Left (Bottom Row)
+        # Right to Left
         if top <= bottom:
             for col in range(right, left - 1, -1):
-                result.append([bottom][col])
+                result.append(matrix[bottom][col])
             bottom -= 1
 
-        # Traverse from Bottom to Top (Left Column)
+        # Bottom to Top
         if left <= right:
             for row in range(bottom, top - 1, -1):
-                result.append([row][left])
+                result.append(matrix[row][left])
             left += 1
 
     return result
 
-print(matrix(l))
-        
+
+
+print(spiralOrder(l))
