@@ -55,9 +55,26 @@
 # print(j+1)
     
 
+l=[2,7,11,15]
+# j=0
+# target=18
+# for i in range(1,len(l)):
+#     if int(l[i])+int(l[j])==target:
+#         print(j,i)
+#     else:
+#         j+=1
 
+    
+# x=-121
+# n=x
+# r=0
+# while n!=0:
+#     rem=n%10
+#     r=r*10+rem
+#     n=n//10
+# print( (r==x))
 
-
+dic={'}':'{',')':'(',']':'['}
         
     
 
