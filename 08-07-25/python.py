@@ -75,6 +75,19 @@ l=[2,7,11,15]
 # print( (r==x))
 
 dic={'}':'{',')':'(',']':'['}
+
+s="{[(]}"
+
+l=[]
+for i in range(len(s)):
+    if s[i] in "{[(":
+        l.append(s[i])
+    elif s[i] in "}])":
+        if l[-1]==dic[s[i]]:
+            l.pop()
+            
+    
+print(len(l)==0)
         
     
 
