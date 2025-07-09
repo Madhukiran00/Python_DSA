@@ -20,7 +20,17 @@ rev_arr(0,k-1)
 rev_arr(k,len(arr)-1)
 print(arr)
 #Output: [8, 1, 2, 3, 4, 5, 6, 7]
-    
+
+#--------------------------------------------
+ 
+li=[4,5,6,7,1,3,2]
+count = 0
+for i in range(len(li)):
+    if li[i] > li[(i + 1) % len(li)]:
+        count += 1
+print(count <= 1)
+
+#Output: True
 
 
 
