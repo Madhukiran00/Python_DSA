@@ -43,7 +43,9 @@ for i in range(len(s)):
             se_max=int(s[i])
 print(se_max)
 
-# Output:3
+
+
+# Output:5
 #--------------------------------------------      
 #Removing Duplicates from a Sorted List
 l=[1,1,2,2,2,3,3,4]
