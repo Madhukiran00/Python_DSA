@@ -30,32 +30,33 @@
 
 
 
- 
-# s="abc1234431def"
-# max=-1
-# se_max=-1
+#Finding the Second Largest Digit in a String
+s="abc1234431def"
+max=-1
+se_max=-1
+for i in range(len(s)):
+    if s[i].isdigit():
+        if int(s[i])>max:
+            se_max=max
+            max=int(s[i])
+        elif int(s[i])>se_max and int(s[i])<max:
+            se_max=int(s[i])
+print(se_max)
 
-# for i in range(len(s)):
-#     if s[i].isdigit():
-#         if int(s[i])>max:
-#             se_max=max
-#             max=int(s[i])
-#         elif int(s[i])>se_max and int(s[i])<max:
-#             se_max=int(s[i])
-# print(se_max)
+# Output:3
+#--------------------------------------------      
+#Removing Duplicates from a Sorted List
+l=[1,1,2,2,2,3,3,4]
 
-        
-# l=[1,1,2,2,2,3,3]
+j=0
+for i in range(1,len(l)):
+    if l[i]!=l[j]:
+        l[j+1]=l[i]
+        j+=1
+print(j+1)
+#Output:4
 
-# j=0
-# for i in range(1,len(l)):
-#     if l[i]!=l[j]:
-#         l[j+1]=l[i]
-#         j+=1
-# print(j+1)
-    
-
-l=[2,7,11,15]
+# l=[2,7,11,15]
 # j=0
 # target=18
 # for i in range(1,len(l)):
@@ -74,20 +75,20 @@ l=[2,7,11,15]
 #     n=n//10
 # print( (r==x))
 
-dic={'}':'{',')':'(',']':'['}
+# dic={'}':'{',')':'(',']':'['}
 
-s="{[(]}"
+# s="{[(]}"
 
-l=[]
-for i in range(len(s)):
-    if s[i] in "{[(":
-        l.append(s[i])
-    elif s[i] in "}])":
-        if l[-1]==dic[s[i]]:
-            l.pop()
+# l=[]
+# for i in range(len(s)):
+#     if s[i] in "{[(":
+#         l.append(s[i])
+#     elif s[i] in "}])":
+#         if l[-1]==dic[s[i]]:
+#             l.pop()
             
     
-print(len(l)==0)
+# print(len(l)==0)
         
     
 
