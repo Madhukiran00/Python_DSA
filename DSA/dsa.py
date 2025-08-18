@@ -77,7 +77,111 @@ for i in range(len(s)):
 # print(sec_max)
 
 #-------------------------------------
+#1752  Check if Array is Sorted and Rotated
+
+'''li=[3,4,5,6,1,2]
+
+c=0
+for i in range(len(li)):
+    if li[i]>li[(i+1)%(len(li))]:
+        c+=1
+if c<=1:
+    print("True")
+else:
+    print("False")'''
+
+
+#------------------------------
+#  189- Rotate array k-times
+
+'''li=[1,2,3,4,5,6,7]
+k=3
+k=k%len(li)
+
+def reverse(i,j):
+    while i<j:
+        temp=li[i]
+        li[i]=li[j]
+        li[j]=temp
+        i+=1
+        j-=1
+reverse(0,len(li)-1)
+print(li)      #[7, 6, 5, 4, 3, 2, 1]
+reverse(0,k-1)
+print(li)       #[5, 6, 7, 4, 3, 2, 1]
+reverse(k,len(li)-1)
+print(li)       #[5, 6, 7, 1, 2, 3, 4]'''
     
+#---------------------------------------
+
+# 485-Max Consecutive ones in a list
+
+'''li=[1,0,1,1,0,1,1,1,1,1,0,1,1,1]
+c=0
+max_count=0
+
+for i in range(len(li)):
+    if li[i]==1:
+        c+=1
+        if c>max_count:
+            max_count=c
+    else:
+        c=0
+print(max_count)'''
+
+#--------------------------------------
+
+# 1 Two -sum
+
+# nums=[7,2,11,6,8]
+# target=17
+
+'''def two_sum(nums,target):
+    for i in range(len(nums)):
+        for j in range(len(nums)):
+            if i!=j:
+                if nums[i]+nums[j]==target:
+                    return i,j
+        
+obj=two_sum(nums,target)
+print(obj)'''
+#----------------------------
+
+
+'''def twosum(nums,target):
+    d={}
+    for i in range(len(nums)):
+        if target-nums[i] in d:
+            return [d[target-nums[i]],i]
+        d[nums[i]]=i
+    
+
+res=twosum(nums,target)
+print(res)'''
+
+#----------------------------------------
+
+# 283 Moves Zeroes
+
+'''nums=[0,1,0,3,12]
+
+j=0
+for i in range(len(nums)):
+    if nums[i]!=0:
+        nums[j],nums[i]=nums[i],nums[j]
+        j+=1
+        
+print(nums) #1,3,12,0,0
+'''
+#------------------------- 
+# 125 valid palindrome
+
+
+
+
+
+
+
 
 
 
